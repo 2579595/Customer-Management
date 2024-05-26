@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { confirmPasswordValidator } from 'src/app/validators/confirm-password.validator';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -31,9 +30,6 @@ export class RegisterComponent implements OnInit {
       password : ['', Validators.required],
       confirmPassword : ['', Validators.required],
      },
-     {
-      validator: confirmPasswordValidator('password', 'confirmPassword')
-     }
      )
     }
  

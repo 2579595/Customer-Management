@@ -1,13 +1,16 @@
 <nav class="w-full flex justify-between items-center h-16 p-5 bg-indigo-500 shadow-xl">
   <div class="logo">
-     <span class="text-gray-200 text-4xl flex justify-start items-center">Unique Travells</span>
+     <span class="text-gray-200 text-4xl flex justify-start items-center">Customer Management</span>
   </div> 
+  <div class="nav-items">
+    <span routerLink="/home" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Home</span>
+    <span routerLink="/customer" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Customer</span>
+    <span routerLink="/orders" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Orders</span> 
+    <span routerLink="/about" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">About us</span> 
+</div>
   <div class="nav-items">
       <span routerLink="/login" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Login</span>
       <span routerLink="/register" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Register</span>
-    
-      <span routerLink= "" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Welcome User</span>
-      <span routerLink="/login" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Logout</span>
-      
+      <span routerLink="/login" class="text-xl cursor-pointer text-gray-200 font-bold m-2 hover:text-indigo-200">Logout</span> 
   </div>
 </nav>

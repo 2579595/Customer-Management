@@ -1,0 +1,95 @@
+
+     <div class="bg">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Customer Management</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="searchTerm" name="searchTerm" [(ngModel)]="searchTerm" placeholder="Filter...">
+              <div class="input-group-append">
+                <button class="btn btn-add-customer" type="button" (click)="onAddEditToggle()">Add Customer</button>
+              </div>
+            </div>
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+              <div *ngIf="isAddingOrEditing">
+                <div class="mb-3">
+                  <label for="fname" class="form-label">First Name:</label>
+                  <input type="text" class="form-control" id="fname" name="fname" [(ngModel)]="model.firstName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="lname" class="form-label">Last Name:</label>
+                  <input type="text" class="form-control" id="lname" name="lname" [(ngModel)]="model.lastName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address:</label>
+                  <input type="text" class="form-control" id="address" name="address" [(ngModel)]="model.address" required>
+                </div>
+                <div class="mb-3">
+                  <label for="city" class="form-label">City:</label>
+                  <input type="text" class="form-control" id="city" name="city" [(ngModel)]="model.city" required>
+                </div>
+                <div class="mb-3">
+                  <label for="state" class="form-label">State:</label>
+                  <input type="text" class="form-control" id="state" name="state" [(ngModel)]="model.state" required>
+                </div>
+                <div class="mb-3">
+                  <label for="orders" class="form-label">Order Total:</label>
+                  <input type="text" class="form-control" id="orders" name="orders" [(ngModel)]="model.total" required>
+                </div>
+                <button type="submit" class="btn btn-success" [disabled]="form.invalid">Save</button>
+                <button type="button" class="btn btn-secondary" (click)="onAddEditToggle()">Cancel</button>
+              </div>
+            </form>
+            <div *ngIf="addBusSuccess" class="alert alert-success alert-fixed-top-right" role="alert">
+              Add Customer Successful
+            </div>
+            <div *ngIf="editBusSuccess" class="alert alert-success alert-fixed-top-right" role="alert">
+              Edit Customer Successful
+            </div>
+            <div *ngIf="deleteBusSuccess" class="alert alert-success alert-fixed-top-right" role="alert">
+              Delete Customer Successful
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Serial</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Order Total</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let customer of paginatedCustomers; let i = index">
+                  <td>{{ (currentPage - 1) * pageSize + i + 1 }}</td>
+                  <td>{{ customer.firstName }}</td>
+                  <td>{{ customer.lastName }}</td>
+                  <td>{{ customer.address }}</td>
+                  <td>{{ customer.city }}</td>
+                  <td>{{ customer.state }}</td>
+                  <td>{{ customer.total }}</td>
+                  <td>
+                    <button class="btn btn-sm btn-warning" (click)="viewOrders()">View Orders</button>
+                    <button class="btn btn-sm btn-primary" (click)="editCustomer(i)">Edit</button>
+                    <button class="btn btn-sm btn-danger" (click)="deleteCustomer(i)">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="btn btn-secondary" (click)="prevPage()">Previous</button>
+      <button class="btn btn-secondary" (click)="nextPage()">Next</button>
+    </div>
+    
