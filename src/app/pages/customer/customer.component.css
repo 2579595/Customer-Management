@@ -1,259 +1,255 @@
-/* General styles */
+
 .bg {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
-  
-  .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mt-5 {
-    margin-top: 3rem;
-  }
-  
-  .input-group {
-    margin-bottom: 1rem;
-  }
-  
-  .input-group .form-control {
-    border-radius: 0.25rem 0 0 0.25rem;
-    border: 1px solid #ced4da; /* Add border to input fields */
-  }
-  
-  .input-group .input-group-append .btn {
-    border-radius: 0 0.25rem 0.25rem 0;
-    padding: 0.5rem 1rem; /* Padding inside the button */
-  }
-  
-  .form-label {
-    font-weight: bold;
-  }
-  
-  .mb-3 {
-    margin-bottom: 1rem;
-  }
-  
-  .form-control {
-    border: 1px solid #ced4da; /* Add border to input fields */
-  }
-  
-  /* Buttons */
-  .btn {
-    margin-right: 10px; /* Add spacing between buttons */
-    padding: 0.5rem 1rem; /* Padding inside buttons */
-    border-radius: 5px; /* Border radius for buttons */
-  }
-  
-  .btn-outline-secondary {
-    color: #6c757d;
-    border-color: #6c757d;
-  }
-  
-  .btn-outline-secondary:hover {
-    background-color: #6c757d;
-    color: #ffffff;
-  }
-  
-  .btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-  }
-  
-  .btn-success:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
-  }
-  
-  .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
-  }
-  
-  .btn-warning {
-    background-color: #ffc107;
-    border-color: #ffc107;
-    color: white;
-  }
-  
-  .btn-warning:hover {
-    background-color: #e0a800;
-    border-color: #d39e00;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-  }
-  
-  .btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
-  }
-  
-  .btn-danger:hover {
-    background-color: #c82333;
-    border-color: #bd2130;
-  }
-  
-  /* Add Customer button */
-  .btn-add-customer {
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-    color: white;
-  }
-  
-  .btn-add-customer:hover {
-    background-color: #138496;
-    border-color: #117a8b;
-  }
-  
-  /* Table */
-  .table {
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
-    border-collapse: collapse;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-  }
-  
-  .table tbody + tbody {
-    border-top: 2px solid #dee2e6;
-  }
-  
-  /* Alerts */
-  .alert {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1050;
-  }
-  
-  .alert-fixed-top-right {
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  /* Pagination */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .pagination .btn {
-    margin: 0 5px;
-    padding: 0.5rem 1rem; /* Padding inside pagination buttons */
-    border-radius: 5px; /* Border radius for pagination buttons */
-  }
-  
-
-
-
-
-
-
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 50px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mt-5 {
+  margin-top: 3rem;
 }
 
 .input-group {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .input-group .form-control {
-    max-width: 300px;
+  border-radius: 0.25rem 0 0 0.25rem;
+  border: 1px solid #ced4da;
 }
 
-.input-group .btn-add-customer {
-    background-color: #ff5722;
-    color: #fff;
-    margin-left: 10px;
+.input-group .input-group-append .btn {
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0.5rem 1rem; 
 }
 
-.input-group .btn-add-customer:hover {
-    background-color: #e64a19;
+.form-label {
+  font-weight: bold;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: 1px solid #ced4da; 
+}
+
+
+.btn {
+  margin-right: 10px; 
+  padding: 0.5rem 1rem; 
+  border-radius: 5px; 
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #ffffff;
 }
 
 .btn-success {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
 }
 
 .btn-secondary {
-    background-color: #6c757d;
-    color: white;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
 }
 
 .btn-warning {
-    background-color: #f0ad4e;
-    color: white;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
 }
 
 .btn-primary {
-    background-color: #0275d8;
-    color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
 }
 
 .btn-danger {
-    background-color: #d9534f;
-    color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
-.pagination {
-    text-align: center;
-    margin-top: 20px;
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+
+.btn-add-customer {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
+}
+
+.btn-add-customer:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+
+.table {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1050;
 }
 
 .alert-fixed-top-right {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+  top: 1rem;
+  right: 1rem;
+  
 }
-/* customer.component.css */
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination .btn {
+  margin: 0 5px;
+  padding: 0.5rem 1rem; 
+  border-radius: 5px; 
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.input-group .form-control {
+  max-width: 300px;
+}
+
+.input-group .btn-add-customer {
+  background-color: #ff5722;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.input-group .btn-add-customer:hover {
+  background-color: #e64a19;
+}
+
+.btn-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #0275d8;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alert-fixed-top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 
 h1 {
-  text-align: center; /* Center align the header */
-  font-family: Arial, sans-serif; /* Specify font family */
-  font-weight: bold; /* Set font weight to bold */
-  font-size: 2rem; /* Adjust font size */
-  margin-bottom: 20px; /* Add margin bottom for spacing */
+text-align: center; 
+font-family: Arial, sans-serif; 
+font-weight: bold; 
+font-size: 2rem;
+margin-bottom: 20px; 
 }
 

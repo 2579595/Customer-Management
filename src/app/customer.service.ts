@@ -11,7 +11,7 @@ export class CustomerService {
 
   private customers: Customer[] = [
     { id: 1, firstName: 'John', lastName: 'Doe', address: '123 Main St', city: 'Anytown', state: 'CA', orderTotalPrice: 100 },
-    // ... add more dummy data here
+    
   ];
 
   constructor() {}

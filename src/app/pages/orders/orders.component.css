@@ -1,4 +1,4 @@
-/* customer.component.css */
+
 
 .card {
   margin-bottom: 20px;
@@ -7,11 +7,11 @@
 }
 
 .card-body {
-  padding: 20px; /* Add padding for card body */
+  padding: 20px; 
 }
 
 .card-deck {
-  display: block; /* Display cards as block elements */
+  display: block; 
 }
 
 .card:hover {
@@ -27,10 +27,10 @@
   color: #666;
 }
 
-/* For smaller devices, adjust padding and font size */
+
 @media (max-width: 768px) {
   .card-body {
-    padding: 15px; /* Adjust padding for smaller devices */
+    padding: 15px; 
   }
 
   .container {
@@ -41,12 +41,12 @@
     font-size: 1rem;
   }
 }
-/* customer.component.css */
+
 
 h1 {
-  text-align: center; /* Center align the header */
-  font-family: Arial, sans-serif; /* Specify font family */
-  font-weight: bold; /* Set font weight to bold */
-  font-size: 2rem; /* Adjust font size */
-  margin-bottom: 20px; /* Add margin bottom for spacing */
+  text-align: center; 
+  font-family: Arial, sans-serif; 
+  font-weight: bold; 
+  font-size: 2rem; 
+  margin-bottom: 20px; 
 }

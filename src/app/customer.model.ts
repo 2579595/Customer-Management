@@ -1,4 +1,4 @@
-// customer.model.ts
+
 
 export class Customer {
     id!: number;

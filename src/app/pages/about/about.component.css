@@ -1,27 +1,33 @@
-/* about-us.component.css */
 
 .container {
-    padding-top: 20px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  h1 {
-    text-align: center;
-    font-family: Arial, sans-serif; 
-    font-weight: bold; 
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding: 25px;
+}
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  font-weight: bold; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-weight: bold; 
+  font-family: Arial, sans-serif;  
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 25px;
+}
 
 
-  
-  

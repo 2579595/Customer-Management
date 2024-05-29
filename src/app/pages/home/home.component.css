@@ -1,66 +1,65 @@
 .jumbotron {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .jumbotron h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .jumbotron p {
-    font-size: 1.2em;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .row {
-    margin-top: 40px;
-  }
-  
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.col-md-4 {
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
   .col-md-4 {
-    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
-  
-  h2 {
-    font-size: 1.8em;
+}
+
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-bottom: 20px;
   }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  
-  /* Responsive Design for Medium Devices (Tablets) */
-  @media (max-width: 992px) {
-    .col-md-4 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive Design for Small Devices (Phones) */
-  @media (max-width: 768px) {
-    .col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  
+}
